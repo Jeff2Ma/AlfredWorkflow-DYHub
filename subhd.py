@@ -42,14 +42,14 @@ def get_film_info_subhd():
             1]
         link_title = link.findChildren('img')[0].get('title')
 
-        save_path = os.path.abspath("./icons/icon")
+        save_path = os.path.abspath("./icons/icon-s")
         imgData = urllib2.urlopen(cover_img).read()
         fileName = save_path + str(i) + '.jpg'
         output = open(fileName, 'wb+')
         output.write(imgData)
         output.close()
 
-        json_item = dict(title=link_title, subtitle='', arg=link_url, icon='icons/icon' + str(i) + '.jpg')
+        json_item = dict(title=link_title, subtitle='', arg=link_url, icon='icons/icon-s' + str(i) + '.jpg')
         items.append(json_item)
         i = i + 1
 
