@@ -1,0 +1,4 @@
+.idea
+icons/icon*.jpg
+user.workflow.**
+.DS_Store
