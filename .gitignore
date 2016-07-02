@@ -2,3 +2,4 @@
 icons/icon*.jpg
 user.workflow.**
 .DS_Store
+*.pyc

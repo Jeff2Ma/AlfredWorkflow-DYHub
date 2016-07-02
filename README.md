@@ -35,14 +35,13 @@
 ![效果截图](screenshot/screenshot5.png) 
 
 
-## 独立资源网站 Workflow 推荐：
+## 独立资源网站 Workflow：
 
 本Workflow 即是通过整合如下三个Workflows 而来。
 
 - [一个快速获取SubHD 热门影视的Alfred Workflow ](https://github.com/Jeff2Ma/AlfredWorkflow-SubHD-HotFilms) 
 
-- [一个快速获取Kat.cr 上热门影视的Alfred Workflow ](https://github.com/Jeff2Ma/AlfredWorkflow-Katcr-
-Moives)
+- [一个快速获取Kat.cr 上热门影视的Alfred Workflow ](https://github.com/Jeff2Ma/AlfredWorkflow-Katcr-Moives)
 
 - [一个快速获取电影天堂上最新资源的Alfred Workflow](https://github.com/Jeff2Ma/AlfredWorkflow-DYTT-NewFilms)
 
