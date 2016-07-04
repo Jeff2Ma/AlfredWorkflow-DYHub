@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# Alfred WorkFlow DYHub
+# 一个快速获取SubHD、Kat.cr、电影天堂的资源信息列表的Alfred Workflow
+# author: JeffMa
+# url: http://devework.com/
+
 import sys
 
 import alfredxml
@@ -39,6 +46,3 @@ def query(word):
         element = alfredxml.generate_xml(rowList)
         print(element)
         return
-
-# word = 'kat'
-# query(word)

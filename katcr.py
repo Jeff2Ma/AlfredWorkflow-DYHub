@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Alfred WorkFlow - Kat.cr Popular Movies
+# Alfred WorkFlow DYHub - Kat.cr
 # author:JeffMa
 # url: http://devework.com/
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Alfred WorkFlow - SubHD.com Hot Films
+# Alfred WorkFlow DYHub - subhd.com
 # author:JeffMa
 # url: http://devework.com/
 
