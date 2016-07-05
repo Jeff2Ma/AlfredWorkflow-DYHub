@@ -41,34 +41,37 @@ def get_film_info_dytt():
 
     key = re.compile(r'《(.+?)》')
 
-    for link in soup.find_all('li', limit=7):
+    for link in soup.find_all('li', limit=8):
 
-        link_url = target_url + link.findChildren('a')[0].get('href')
-        link_time = link.findChildren('span')[0].string
-        link_title = link.findChildren('a')[0].get('title')[5:]
+        if i != 0:
+            link_url = target_url + link.findChildren('a')[0].get('href')
+            link_time = link.findChildren('span')[0].string
+            link_title = link.findChildren('a')[0].get('title')[5:]
 
-        file_name = re.findall(u'《(.*?)[【|》]', link_title)[0]
+            file_name = re.findall(u'《(.*?)[【|》]', link_title)[0]
 
-        # print file_name.encode("utf-8")
+            # print file_name.encode("utf-8")
 
-        douban_api = 'https://api.douban.com/v2/movie/search?q=' + file_name.encode("utf-8")
-        user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'
-        headers = {'User-Agent': user_agent}
-        req = urllib2.Request(douban_api, None, headers)
-        api_content = urllib2.urlopen(req)
-        json_content = json.load(api_content)['subjects'][0]['images']['small']
-        img_url = json_content
-        #print img_url
+            douban_api = 'https://api.douban.com/v2/movie/search?q=' + file_name.encode("utf-8")
+            user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'
+            headers = {'User-Agent': user_agent}
+            req = urllib2.Request(douban_api, None, headers)
+            api_content = urllib2.urlopen(req)
+            json_content = json.load(api_content)['subjects'][0]['images']['small']
+            img_url = json_content
+            #print img_url
 
-        save_path = os.path.abspath("./icons/icon")
-        img_data = urllib2.urlopen(img_url).read()
-        file_name = save_path + str(i) + '.jpg'
-        output = open(file_name, 'wb+')
-        output.write(img_data)
-        output.close()
+            save_path = os.path.abspath("./icons/icon")
+            img_data = urllib2.urlopen(img_url).read()
+            file_name = save_path + str(i) + '.jpg'
+            output = open(file_name, 'wb+')
+            output.write(img_data)
+            output.close()
 
-        json_item = dict(title=link_title, subtitle='日期: '+link_time, arg=link_url, icon='icons/icon' + str(i) + '.jpg')
-        items.append(json_item)
+            json_item = dict(title=link_title, subtitle='日期: '+link_time, arg=link_url, icon='icons/icon' + str(i) + '.jpg')
+            items.append(json_item)
         i = i + 1
 
     return generate_xml(items)
+
+# print(get_film_info_dytt())

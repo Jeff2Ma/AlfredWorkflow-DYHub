@@ -46,3 +46,5 @@ def query(word):
         element = alfredxml.generate_xml(rowList)
         print(element)
         return
+
+# print(query('tt'))
