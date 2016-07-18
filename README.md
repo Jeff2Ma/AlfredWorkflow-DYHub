@@ -6,7 +6,7 @@
  
 ## 基本说明
 
-这是一个可以通过Alfred 的关键词快速获取三大电影资源站（[SubHD](http://subhd.com)、[Kat.cr](https://kat.cr)、[电影天堂](http://www.dy2018.com)）最新电影下载资源的Alfred Workflow。使用Python 语言编写，支持最新的Alfred 3。
+这是一个可以通过Alfred 的关键词快速获取三大电影资源站（[SubHD](http://subhd.com)、[Kat.cr](https://kat.cr)、[电影天堂](http://www.dy2018.com)）最新电影下载资源的Alfred Workflow。使用Python 语言编写( python2 )，支持最新的Alfred 3。
 
 使用本Workflow 前请确保你的Alfred APP 的Powerpack 功能已经解锁。
 
@@ -45,6 +45,11 @@
 
 - [一个快速获取电影天堂上最新资源的Alfred Workflow](https://github.com/Jeff2Ma/AlfredWorkflow-DYTT-NewFilms)
 
+## 注意
+
+本Workflow 需要本机环境安装BeautifulSoup4 包才能正常运行：
+
+	sudo pip install BeautifulSoup4
 
 ## 其它
 
