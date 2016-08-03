@@ -4,6 +4,8 @@
  
  ****
  
+ 8月3日更新：kat.cr 已挂（创始人被抓），kat 部分暂不可用。
+ 
 ## 基本说明
 
 这是一个可以通过Alfred 的关键词快速获取三大电影资源站（[SubHD](http://subhd.com)、[Kat.cr](https://kat.cr)、[电影天堂](http://www.dy2018.com)）最新电影下载资源的Alfred Workflow。使用Python 语言编写( python2 )，支持最新的Alfred 3。
